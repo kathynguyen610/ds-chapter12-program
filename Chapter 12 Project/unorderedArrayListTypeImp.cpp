@@ -26,5 +26,4 @@ void unorderedArrayListType::remove(int removeItem)
 }
 
 unorderedArrayListType::unorderedArrayListType(int s):arrayListType(s){
-	s = maxSize;
 }
