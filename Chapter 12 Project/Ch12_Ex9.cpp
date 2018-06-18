@@ -26,6 +26,7 @@ int main()
 	intList.print();
 	cout << endl;
 
+	
 	cout << "The smallest number in intList: "
 << intList.min() << endl;
 	system("pause");

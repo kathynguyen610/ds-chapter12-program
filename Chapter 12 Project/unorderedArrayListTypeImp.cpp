@@ -8,8 +8,14 @@ void unorderedArrayListType::insertAt(int location, int insertItem)
 {
 }
 
-void unorderedArrayListType::insertEnd(int insertItem)
-{
+void unorderedArrayListType::insertEnd(int insertItem){
+	if (length >= maxSize) { //the list is full
+		cout << "Cannot insert in a full list." << endl;
+	}
+	else {
+		list[length] = insertItem; //insert the item at the end
+		length++;
+	}
 }
 
 void unorderedArrayListType::replaceAt(int location, int repItem)
