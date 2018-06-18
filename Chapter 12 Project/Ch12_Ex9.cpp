@@ -1,6 +1,6 @@
-//Student: Kathy Nguyen
+//Kathy Nguyen
 //Date: 6/18/2018
-//Data:  18 42 78 22 42 5 42 57
+//Assignment: Chapter 12 Program
 
 #include <iostream>
 #include "unorderedArrayListType.h"
@@ -26,9 +26,8 @@ int main()
 	intList.print();
 	cout << endl;
 
-	
 	cout << "The smallest number in intList: "
-<< intList.min() << endl;
+		<< intList.min() << endl;
 	system("pause");
 	return 0;
 }

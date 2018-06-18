@@ -11,7 +11,8 @@ public:
 	int seqSearch(int searchItem) const;
 	void remove(int removeItem);
 
-	unorderedArrayListType(int size = 100);
+	unorderedArrayListType(int size = 100); //default constructor
+	int min(); //derived function min
 
 };
 #endif

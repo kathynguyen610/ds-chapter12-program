@@ -17,15 +17,9 @@ public:
 	virtual int seqSearch(int searchItem) const;
 	virtual void remove(int removeItem) = 0;
 
-	int min();
-
+	virtual int min() = 0; //pure virtual function
 	arrayListType(int size = 100);
 	arrayListType(const arrayListType& otherList);
-	//Constructor
-	//Creates an arrat of the size specified by the
-	//parameter size. The default array size is 100.
-	//Postcondition: If removeItem is found in the list,
-	//it is removed from the lsit and length is decremented by one.
 	virtual ~arrayListType();
 
 
@@ -34,7 +28,4 @@ protected:
 	int length;
 	int maxSize;
 };
-
-
-
 #endif

@@ -2,9 +2,10 @@
 #include "arrayListType.h"
 using namespace std;
 
+//Constructor creates an array with a max size of var s
 arrayListType::arrayListType(int s){
 	if (s <= 0) {
-		cout << "The array size cannot negative. Creating an array with 100 elements..." << endl;
+		cout << "The array size cannot be negative. Creating an array with 100 elements..." << endl;
 		maxSize = 100;
 	}
 	else {
@@ -14,16 +15,12 @@ arrayListType::arrayListType(int s){
 	}
 }
 
-arrayListType::~arrayListType()
-{
+//Deconstructor
+arrayListType::~arrayListType(){
 }
 
-void arrayListType::insertEnd(int num){
-
-}
-
+//Prints the array in a line
 void arrayListType::print(){
-	//prints the array in a line
 	for (int i = 0; i < length; i++) {
 		cout << list[i] << " ";
 	}
@@ -34,12 +31,6 @@ int arrayListType::seqSearch(int searchItem) const{
 	return 0;
 }
 
-int arrayListType::min(){
-	int smallNum = list[0];
-	for (int i = 0; i < length; i++) {
-		if (smallNum > list[i]){
-			smallNum = list[i];
-		}
-	}
-	return smallNum;
+void arrayListType::insertEnd(int num) {
+
 }
